@@ -12,7 +12,7 @@ if (numText.Length < 3 || numText.Length > 3)
 {
     Console.WriteLine("Проверьте ввод! Введите трёхзначное число!");
 }
-else 
+else
 {
     Console.Write("Вторая цифра числа =  " + numText[1]);
 }
