@@ -5,7 +5,7 @@
 // 918 -> 1
 
 Console.Write("Введите трёхзначное число: ");
-int num = Convert.ToInt16(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 string numText = Convert.ToString(num);
 
 if (numText.Length < 3 || numText.Length > 3)
