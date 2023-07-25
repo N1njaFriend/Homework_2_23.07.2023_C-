@@ -4,17 +4,41 @@
 // 1 -> нет
 
 Console.Write("Введите число: ");
-int dayNum = Convert.ToInt32(Console.ReadLine());
-
-if (dayNum == 6 || dayNum == 7)
+string? value = Console.ReadLine();
+int dayNum;
+if (int.TryParse(value, out dayNum))
 {
+    if (dayNum == 6 || dayNum == 7)
+    {
     Console.WriteLine("Выходной день");
-}
-else if ((dayNum > 0) && (dayNum < 6))
-{
+    }
+    else if ((dayNum > 0) && (dayNum < 6))
+    {
     Console.WriteLine("Будний день");
+    }
+    else
+    {
+    Console.WriteLine("Введите число от 1 до 7!");
+    }
 }
 else
 {
-    Console.WriteLine("Введите число от 1 до 7!");
+    Console.WriteLine("Ошибка! Введите число!");
 }
+
+// v2 в работе используются строковые операции для получения цифр из числа
+// Console.Write("Введите число: ");
+// int dayNum = Convert.ToInt32(Console.ReadLine());
+
+// if (dayNum == 6 || dayNum == 7)
+// {
+//     Console.WriteLine("Выходной день");
+// }
+// else if ((dayNum > 0) && (dayNum < 6))
+// {
+//     Console.WriteLine("Будний день");
+// }
+// else
+// {
+//     Console.WriteLine("Введите число от 1 до 7!");
+// }
