@@ -10,15 +10,15 @@ if (int.TryParse(value, out dayNum))
 {
     if (dayNum == 6 || dayNum == 7)
     {
-    Console.WriteLine("Выходной день");
+        Console.WriteLine("Выходной день");
     }
     else if ((dayNum > 0) && (dayNum < 6))
     {
-    Console.WriteLine("Будний день");
+        Console.WriteLine("Будний день");
     }
     else
     {
-    Console.WriteLine("Введите число от 1 до 7!");
+        Console.WriteLine("Введите число от 1 до 7!");
     }
 }
 else
