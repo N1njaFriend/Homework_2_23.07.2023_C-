@@ -40,24 +40,3 @@ if (int.TryParse(input, out result))
 // {
 //     Console.WriteLine("Проверьте ввод! Третьей цифры нет!");
 // }
-
-Console.Write("Введите минимум трёхзначное число: ");
-string? input = Console.ReadLine();
-int result;
-int i = 2;
-if (int.TryParse(input, out result))
-{
-    if (result >= 100)
-    {
-        string numStr = result.ToString();
-        if (i < numStr.Length)
-        {
-            int thirdNum = int.Parse(numStr[i].ToString());
-            Console.WriteLine($"Третья цифра введенного числа: {thirdNum}");
-        }
-    }
-    else
-    {
-        Console.WriteLine("Ошибка! Введенное число не содержит третью цифру!");
-    }
-}
